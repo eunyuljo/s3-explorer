@@ -9,32 +9,19 @@
 	2. python3
 	
 	2-1. pip 
-
-```
-	sudo dnf install python3-pip -y
-```
+    	sudo dnf install python3-pip -y
 
 	4. python3 패키지
-
-```
-	python3 -m pip install tabulate boto3
-```
-
+    	python3 -m pip install tabulate boto3
 
 	5. AWS IAM 및 AWSCLI Credetial profile 세팅
-
-```
-	$ aws configure --profile eyjo
-```
-
+	    $ aws configure --profile eyjo
 
 
 ---
 
 
-
 ■ 실행 방법
-
 
 ```
 # 고속 모드 
