@@ -14,14 +14,14 @@ DEFAULT_PROFILE = None  # 기본값은 None으로 설정하여 AWS CLI의 기본
 
 # 스토리지 클래스 별 요율 (GB 기준, 예시 값)
 storage_class_rates = {
-    "STANDARD": 0.023,
-    "STANDARD_IA": 0.0125,
+    "STANDARD": 0.025,
+    "STANDARD_IA": 0.0138,
     "ONEZONE_IA": 0.01,
-    "GLACIER": 0.004,
-    "DEEP_ARCHIVE": 0.00099,
+    "GLACIER": 0.005,
+    "DEEP_ARCHIVE": 0.002,
     "INTELLIGENT_TIERING": 0.023,
     "REDUCED_REDUNDANCY": 0.023,
-    "GLACIER_IR": 0.004
+    "GLACIER_IR": 0.005
 }
 
 # 대량 사용 할인 적용을 위한 단계별 요율
