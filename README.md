@@ -1,6 +1,6 @@
 # s3-explorer
 
-```
+---
 
 ■ 환경
 
@@ -27,7 +27,10 @@
 	$ aws configure --profile eyjo
 ```
 
-```
+
+
+---
+
 
 
 ■ 실행 방법
@@ -47,3 +50,4 @@ python3 s3-explorer-new.py --workers 5
 python3 s3-explorer-new.py --region ap-northeast-2
 ```
 
+---
