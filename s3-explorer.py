@@ -9,8 +9,8 @@ import concurrent.futures
 import time
 import argparse
 
-# AWS CLI 프로필 지정 (여기서 --profile에 해당하는 이름을 입력)
-aws_profile = "eyjo"  # 이곳에 `aws configure --profile`로 설정한 프로필 이름을 넣습니다.
+# AWS CLI 프로필 기본값 설정
+DEFAULT_PROFILE = None  # 기본값은 None으로 설정하여 AWS CLI의 기본 프로필 또는 환경 변수 사용
 
 # 스토리지 클래스 별 요율 (GB 기준, 예시 값)
 storage_class_rates = {
@@ -237,8 +237,8 @@ def main():
                       help='이름에 특정 문자열을 포함하는 버킷만 분석')
     parser.add_argument('-t', '--top', type=int,
                       help='크기가 가장 큰 N개의 버킷만 분석 (결과 정렬 후)')
-    parser.add_argument('-p', '--profile', type=str, default=aws_profile,
-                      help=f'사용할 AWS 프로필 (기본값: {aws_profile})')
+    parser.add_argument('-p', '--profile', type=str, default=DEFAULT_PROFILE,
+                      help='사용할 AWS 프로필 (기본값: 기본 AWS 프로필)')
     
     args = parser.parse_args()
     
