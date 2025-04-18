@@ -23,7 +23,7 @@
 	3. python3 패키지
     	python3 -m pip install tabulate boto3
 
-	4. AWS IAM 및 AWSCLI Credetial profile 세팅
+	4. AWS IAM 및 AWSCLI Credetial profile 세팅 ( readonlyaccess 혹은 s3, cloudwatch 에만 최소 정책 ) 
 	    $ aws configure --profile eyjo
 
 
