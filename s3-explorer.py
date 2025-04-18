@@ -17,13 +17,12 @@ storage_class_rates = {
     "STANDARD": 0.025,
     "STANDARD_IA": 0.0138,
     "ONEZONE_IA": 0.01,
-    "GLACIER": 0.005,
+    "GLACIER": 0.0045,
     "DEEP_ARCHIVE": 0.002,
     "INTELLIGENT_TIERING": 0.023,
     "REDUCED_REDUNDANCY": 0.023,
     "GLACIER_IR": 0.005
 }
-
 # 대량 사용 할인 적용을 위한 단계별 요율
 def calculate_discounted_cost(total_gb):
     if total_gb <= 50 * 1024:
